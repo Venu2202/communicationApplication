@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: space-around; /* Spacing around links */
+  background-color: #4a4a4a; /* Darker background color */
+  padding: 10px 20px; /* Increased padding for better spacing */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #333; /* Bottom border for separation */
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar a {
+  color: #ffffff; /* White text for better contrast */
+  padding: 15px 25px; /* Consistent padding */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1em; /* Slightly smaller font size */
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.navbar a:hover {
+  background-color: #666666; /* Slightly lighter background on hover */
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+.navbar a.active {
+  background-color: #3b3b3b; /* Active link background color */
+}
+
+.chat-header {
+  margin-top: 80px; /* Space for the fixed navbar */
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.input-group {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px;
+}
+
+.input-group .username-display {
+  padding: 10px;
+  background-color: #424544;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.input-group .chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  max-width: 100%; /* Increased width of the input field */
+  margin-right: 3px; /* Space between input and buttons */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+.btn-secondary {
+  background-color: #bbb;
+  color: white;
+  margin-left: 6px; /* Add space before the button */
+}
+
+.btn-secondary:hover {
+  background-color: #aaa;
+}

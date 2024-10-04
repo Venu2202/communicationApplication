@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Chat</title>
+
+    <!-- Load external JavaScript for authentication -->
+    <script src="auth.js" defer></script>
+    <!-- Load external CSS for styling the chat page -->
+    <link rel="stylesheet" href="css/chat.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <!-- Links to other sections of the application -->
+      <a href="Chat.html">Group Chat</a>
+      <a href="userList.html">Manage Users</a>
+      <a href="manageDocuments.html">Manage Documents</a>
+      <!-- Logout button that calls the confirmLogout function on click -->
+      <a href="#" class="navbar-link" onclick="confirmLogout(event)">Logout</a>
+    </div>
+
+    <!-- Chat Header -->
+    <h2 class="chat-header">Group Chat</h2>
+
+    <!-- Div to display chat messages -->
+    <div id="chatMessages" class="chat-messages"></div>
+
+    <!-- Chat input form -->
+    <form id="chatForm">
+      <div class="input-group">
+        <!-- Display logged-in username -->
+        <span id="loggedInUser" class="username-display"></span>
+        <!-- Input field for typing chat messages -->
+        <input
+          type="text"
+          id="chatMessage"
+          class="chat-input"
+          placeholder="Type your message..."
+          required
+        />
+        <!-- Button to send the chat message -->
+        <button class="btn btn-primary" type="submit">Send</button>
+        <!-- Button to refresh chat messages -->
+        <button class="btn btn-secondary" id="refreshChat" type="button">
+          Refresh
+        </button>
+      </div>
+    </form>
+
+    <!-- Load external JavaScript for chat functionality -->
+    <script src="js/chat.js"></script>
+    <!-- Load external JavaScript for logout functionality -->
+    <script src="js/logout.js"></script>
+  </body>
+</html>

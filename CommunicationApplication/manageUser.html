@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit User</title>
+    <!-- Link to external CSS for styling the edit user page -->
+    <link rel="stylesheet" href="css/edituser.css" />
+    <!-- Link to external JavaScript for authentication handling -->
+    <script src="auth.js" defer></script>
+  </head>
+  <body>
+    <!-- Top Navigation Bar with links to various sections -->
+    <div class="navbar">
+      <a href="Chat.html">Group Chat</a>
+      <a href="userList.html">Manage Users</a>
+      <a href="manageDocuments.html">Manage Documents</a>
+      <a href="#" class="navbar-link" onclick="confirmLogout(event)">Logout</a>
+    </div>
+
+    <!-- Main content area displaying the edit user form -->
+    <div class="content">
+      <div class="form-container">
+        <!-- Title of the form -->
+        <h1 class="form-title">Edit User Information</h1>
+        <!-- Form for editing user details -->
+        <form id="editUserForm" class="user-form">
+          <div class="form-group">
+            <label class="form-label" for="fullname">Full Name</label>
+            <!-- Input field for the user's full name -->
+            <input
+              class="form-input"
+              type="text"
+              id="fullname"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <!-- Input field for the user's email address -->
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <!-- Button to save the edited user information -->
+          <button class="form-button" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+    <!-- Link to external JavaScript for handling edit user functionality -->
+    <script src="js/edituser.js"></script>
+    <!-- Link to external JavaScript for handling logout functionality -->
+    <script src="js/logout.js"></script>
+  </body>
+</html>

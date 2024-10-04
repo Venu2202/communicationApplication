@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User List</title>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="css/user.css" />
+    <!-- Link to authentication script -->
+    <script src="auth.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="Chat.html">Group Chat</a>
+      <a href="userList.html" class="active">Manage Users</a>
+      <a href="manageDocuments.html">Manage Documents</a>
+      <!-- Logout link with confirmation on click -->
+      <a href="#" class="navbar-link" onclick="confirmLogout(event)">Logout</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+      <h1>Users</h1>
+      <!-- Table to display user information -->
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>User Email ID</th>
+            <th>Action</th>
+            <!-- Column for actions like edit/delete -->
+          </tr>
+        </thead>
+        <!-- Body where user data will be dynamically inserted -->
+        <tbody id="userTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Scripts for user functionality and logout -->
+    <script src="js/user.js"></script>
+    <script src="js/logout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: space-around; /* Spacing around links */
+  background-color: #4a4a4a; /* Darker background color */
+  padding: 10px 20px; /* Increased padding for better spacing */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #333; /* Bottom border for separation */
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar a {
+  color: #ffffff; /* White text for better contrast */
+  padding: 15px 25px; /* Consistent padding */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1em; /* Slightly smaller font size */
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.navbar a:hover {
+  background-color: #666666; /* Slightly lighter background on hover */
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+.navbar a.active {
+  background-color: #3b3b3b; /* Active link background color */
+}
+
+
+.container {
+  margin-top: 120px;
+  padding: 20px;
+}
+
+.head-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.upload-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #707571;
+  border: none;
+  color: black;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.file-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.choose-file-btn {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#fileNameDisplay {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #cbcaca; /* Slightly darker white background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px; /* Increased width */
+  text-align: left; /* Left-align content */
+  box-shadow: none; /* Remove shadow */
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0; /* Remove top margin from title */
+  margin-bottom: 20px; /* Add space below title */
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-content input[type="text"] {
+  width: 80%; /* Full width input */
+  padding: 8px;
+  margin-bottom: 15px; /* Space below input */
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.file-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.choose-file-btn {
+  background-color: #e0e0e0; /* Light gray background */
+  color: #333;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#fileNameDisplay {
+  flex-grow: 1;
+  color: black; 
+}
+
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end; /* Aligns flex items to the end (right side) */
+  position: absolute; /* Position the footer absolutely within the modal-content */
+  bottom: 20px; /* Distance from the bottom of modal-content */
+  right: 20px;
+}
+.modal-content button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-content button.cancel-btn {
+  background-color: #eabfbc; /* Softer red */
+  color: rgb(5, 5, 5);
+  margin-right: 10px; /* Space between buttons */
+}
+
+.modal-content button.save-btn {
+  background-color: #87a688; /* Green color for upload */
+  color: rgb(5, 5, 5);
+}
+
+/* Action button styles */
+.action-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-bottom: 2px;
+  border-left: none;
+}
+
+.action-btns a {
+  text-decoration: none;
+  color: #4caf50; /* Edit button color */
+  position: relative;
+  padding: 5px 10px; /* Added padding */
+  transition: color 0.3s;
+}
+
+.action-btns a:hover {
+  color: #388e3c; /* Darker green on hover */
+}
+
+.action-btns a.delete-btn {
+  color: #f44336; /* Delete button color */
+}

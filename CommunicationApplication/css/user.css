@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4; /* Light background for overall page */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-around;
+  background-color: #4a4a4a;
+  padding: 10px 20px;
+  position: fixed; /* Fixed position at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  border-bottom: 2px solid #333;
+  z-index: 10; /* Ensure it stays above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Navbar Link Styles */
+.navbar a {
+  color: #ffffff; /* White text for better contrast */
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1em; /* Slightly larger font size */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.navbar a:hover {
+  background-color: #666666; /* Lighter background on hover */
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+/* Content Styles */
+.content {
+  margin-top: 80px; /* Adjust for navbar height */
+  padding: 20px;
+  text-align: center; /* Centered text */
+}
+
+/* Heading Styles */
+.content h1 {
+  font-size: 33px; /* Heading size */
+  font-weight: bold; /* Bold text */
+  margin-top: 50px;
+}
+
+/* User Table Styles */
+.user-table {
+  width: 80%; /* Width of the table */
+  border-collapse: collapse;
+  margin: 40px auto; /* Center table */
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px; /* Cell padding */
+  text-align: left; /* Left-aligned text */
+  border: 1px solid #dddddd; /* Border around cells */
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row color for readability */
+}
+
+.user-table th {
+  background-color: #f2f2f2; /* Header background color */
+}
+
+/* Action Buttons in Table */
+.action-btns {
+  display: flex; /* Flex layout for buttons */
+  align-items: center; /* Centered alignment */
+  gap: 10px; /* Space between buttons */
+}
+
+.action-btns a {
+  text-decoration: none; /* Remove underline */
+  color: #4caf50; /* Edit button color */
+}
+
+.action-btns a.delete {
+  color: #f44336; /* Delete button color */
+}
+
+.action-btns span {
+  margin: 0 5px; /* Space around the separator */
+}

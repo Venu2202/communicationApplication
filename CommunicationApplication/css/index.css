@@ -1,0 +1,60 @@
+.Index-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align closer to the top */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin-top: 50px; /* Margin to push content up */
+}
+
+.Index-container {
+  text-align: center;
+  padding-top: 30px; /* Adjust padding */
+}
+
+.Index-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 55px; /* Space after the header */
+  color: #333; /* Darker color for contrast */
+}
+
+.Index-existing-users,
+.Index-new-users {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 35px; /* Space between text and buttons */
+}
+
+.Index-button {
+  margin: 20px; /* Space between buttons */
+  padding: 10px 40px; /* Adjust padding for wider buttons */
+  font-size: 16px;
+  background-color: #656363cb; /* Match navbar background */
+  color: #ffffff; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Rounded corners */
+  cursor: pointer;
+  min-width: 150px; /* Minimum width for buttons */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.Index-button:hover {
+  background-color: #4a4a4a; /* Lighter shade on hover */
+  transform: scale(1.05); /* Enlarges button on hover */
+}
+
+.logout-message {
+  margin-bottom: 50px; /* Space above the message */
+  text-align: center;
+  display: none;
+}
+
+.logout-message h1 {
+  color: #101110; /* Color for the message */
+  font-size: 24px;
+}
+
+.logout-message.show {
+  display: block; /* Show the message when this class is added */
+}

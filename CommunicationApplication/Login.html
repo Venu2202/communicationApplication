@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Link to external CSS for styling the login page -->
+    <link rel="stylesheet" href="css/loginstyle.css" />
+</head>
+<body>
+    <!-- Main container for the login form -->
+    <div class="login-container">
+        <!-- Title of the login form -->
+        <h1 class="login-title">Login</h1>
+        <!-- Login form element -->
+        <form id="loginForm" class="login-form">
+            <!-- Email input field -->
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+            <!-- Password input field -->
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-input" required>
+            </div>
+            <!-- Submit button to log in -->
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+    <!-- Link to external JavaScript for handling login logic -->
+    <script src="js/login.js"></script>
+</body>
+</html>
